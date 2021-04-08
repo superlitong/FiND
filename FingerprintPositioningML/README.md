@@ -50,7 +50,7 @@ PMML是数据挖掘的一种通用的规范，它用统一的XML格式来描述�
 > 需要安装maven工具。可参考：https://www.runoob.com/maven/maven-setup.html
 4. 执行完毕后，在目录pmml-android-example/target/generated-sources/combined-assets/下能够找到生成的FiNDTreeClassifier.pmml.ser文件
 > 以下说明仅用于解释原理，运行时无需额外操作：由于安卓无法直接采用java中的Evaluator，因此需要使用jpmml-android工程生成的pmml-android-1.0-SNAPSHOT.jar来创建自定义的Evaluator对象。具体使用方法为，将目录pmml-android\target中的pmml-android-1.0-SNAPSHOT.jar放入FiND demo工程的libs目录下，并调用以下方法：org.jpmml.android.EvaluatorUtil.createEvaluator(InputStream is)
-5. 通过USB连接手机，通过adb工具将FiNDTreeClassifier.pmml.ser文件拷贝到手机/sdcard/Downloads/目录下
+5. 通过USB连接手机，通过adb工具将FiNDTreeClassifier.pmml.ser文件拷贝到手机/sdcard/Download/目录下
    ```
     adb push FiNDTreeClassifier.pmml.ser /sdcard/Download/
    ```
